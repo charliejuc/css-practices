@@ -1,0 +1,14 @@
+body {
+  background-color: #212;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  margin: 5em auto;
+  border-radius: 50%;
+  background: rgb(185, 46, 46);
+  box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.3) inset,
+    5px 5px 20px rgba(255, 255, 255, 0.4) inset,
+    5px 5px 15px rgba(255, 255, 255, 0.15);
+}
