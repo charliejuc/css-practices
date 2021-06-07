@@ -1,0 +1,81 @@
+.container {
+  position: relative;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.button {
+  --button-width: 10em;
+  --button-height: calc(var(--button-width) * 0.4);
+  --button-color: hsl(0, 0%, 99%);
+  --button-background-color: hsl(40, 100%, 50%);
+  --button-color-alt: hsl(40, 100%, 47%);
+  --button-border: 3px solid var(--button-color-alt);
+  --button-font-size: 1.15rem;
+
+  position: relative;
+  display: inline;
+
+  width: var(--button-width);
+  height: var(--button-height);
+  padding: 0;
+  box-sizing: border-box;
+
+  margin-bottom: 1em;
+  text-align: center;
+
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  border: var(--button-border);
+  border-radius: 0.25rem;
+
+  font-size: var(--button-font-size);
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.button:not(button) {
+  --button-padding-lr: calc(var(--button-width) * 0.294);
+  --button-padding-tb: calc(var(--button-padding-lr) * 0.405);
+
+  padding: var(--button-padding-tb) var(--button-padding-lr);
+}
+
+.button.small {
+  --button-font-size: 1rem;
+}
+
+.button.medium {
+  --button-font-size: 1.3rem;
+}
+
+.button.large {
+  --button-font-size: 1.45rem;
+}
+
+.button.fullwidth {
+  --button-width: 100%;
+
+  display: block;
+}
+
+.button:not(button).fullwidth {
+  --button-padding-tb: 1em;
+}
+
+button.button.fullwidth {
+  --button-height: 3.62em;
+}
+
+.button.blue {
+  --button-background-color: hsl(204, 100%, 60%);
+  --button-color-alt: hsl(204, 100%, 50%);
+}
+
+.button:hover {
+  --button-background-color: var(--button-color-alt);
+}
